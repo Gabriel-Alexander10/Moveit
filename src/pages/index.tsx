@@ -3,6 +3,7 @@ import { CountDown } from "../components/CountDown";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 import { DarkModeButton } from "../components/DarkModeButton";
+import { ChallengeBox } from "../components/ChallengeBox";
 
 import Head from "next/head";
 
@@ -39,7 +40,9 @@ export default function Home() {
           <CountDown darktheme={darktheme} />
         </div>
 
-        <div></div>
+        <div>
+          <ChallengeBox darktheme={darktheme} />
+        </div>
       </section>
     </div>
   );
