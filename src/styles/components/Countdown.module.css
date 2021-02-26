@@ -1,4 +1,4 @@
-.countDownContainer {
+.countdownContainer {
   display: flex;
   align-items: center;
   font-family: Rajdhani;
@@ -7,11 +7,11 @@
   transition: color 0.2s;
 }
 
-.darkthemeCountDownContainer {
+.darkthemeCountdownContainer {
   color: var(--darktheme-title);
 }
 
-.countDownContainer > div {
+.countdownContainer > div {
   display: flex;
   flex: 1;
   align-items: center;
@@ -26,33 +26,33 @@
   transition: background-color 0.2s;
 }
 
-.darkthemeCountDownContainer > div {
+.darkthemeCountdownContainer > div {
   background: var(--darktheme-black);
 }
 
-.countDownContainer > div span {
+.countdownContainer > div span {
   flex: 1;
 }
 
-.countDownContainer > div span:first-child {
+.countdownContainer > div span:first-child {
   border-right: 1px solid #f0f1f3;
   transition: border-color 0.2s;
 }
 
-.countDownContainer > div span:last-child {
+.countdownContainer > div span:last-child {
   border-left: 1px solid #f0f1f3;
   transition: border-color 0.2s;
 }
 
-.darkthemeCountDownContainer > div span:first-child {
+.darkthemeCountdownContainer > div span:first-child {
   border-right: 1px solid #191919;
 }
 
-.darkthemeCountDownContainer > div span:last-child {
+.darkthemeCountdownContainer > div span:last-child {
   border-left: 1px solid #191919;
 }
 
-.countDownContainer > span {
+.countdownContainer > span {
   font-size: 6.25rem;
   margin: 0 0.5rem;
 }
@@ -86,7 +86,7 @@
   color: var(--title);
 }
 
-.darkthemecountdownButtonActive {
+.darkthemeCountdownButtonActive {
   background: var(--darktheme-black);
   color: var(--darktheme-title);
 }
@@ -102,7 +102,7 @@
   cursor: not-allowed;
 }
 
-.darkthemecountdownButtonActive:disabled {
+.darkthemeCountdownButtonActive:disabled {
   background: var(--darktheme-black);
   color: var(--darktheme-text);
 }

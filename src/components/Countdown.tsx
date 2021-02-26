@@ -1,52 +1,28 @@
 import { useCallback, useState, useEffect, useContext } from "react";
-import { ChallengesContext } from "../contexts/ChallengesContext";
-import styles from "../styles/components/CountDown.module.css";
+import { CountdownContext } from "../contexts/CountdownContext";
+import styles from "../styles/components/Countdown.module.css";
 
-let countDownTimeOut: NodeJS.Timeout;
-
-export function CountDown({ darktheme }) {
-  const { startNewChallenge } = useContext(ChallengesContext);
-
-  const [time, setTime] = useState(0.3 * 60);
-  const [isActive, setIsActive] = useState(false);
-  const [hasFinished, setHasFinished] = useState(false);
-
-  const minutes = Math.floor(time / 60);
-  const seconds = time % 60;
+export function Countdown({ darktheme }) {
+  const {
+    minutes,
+    seconds,
+    hasFinished,
+    isActive,
+    startCountDown,
+    resetCountDown,
+  } = useContext(CountdownContext);
 
   const [minuteLeft, minuteRight] = String(minutes).padStart(2, "0").split("");
   // pad start: se a string n tiver 2 caracteres, ele vai colocar no começo o caracter 0;
 
   const [secondLeft, secondRight] = String(seconds).padStart(2, "0").split("");
 
-  const startCountDown = useCallback(() => {
-    setIsActive(true);
-  }, []);
-
-  const resetCountDown = useCallback(() => {
-    clearTimeout(countDownTimeOut); // cancelando a execução de um settimeout
-    setIsActive(false);
-    setTime(0.3 * 60);
-  }, []);
-
-  useEffect(() => {
-    if (isActive && time > 0) {
-      countDownTimeOut = setTimeout(() => {
-        setTime(time - 1);
-      }, 1000);
-    } else if (isActive && time === 0) {
-      setHasFinished(true);
-      setIsActive(false);
-      startNewChallenge();
-    }
-  }, [isActive, time]);
-
   return (
     <div>
       <div
         className={
-          `${styles.countDownContainer}` +
-          ` ${darktheme ? styles.darkthemeCountDownContainer : ""}`
+          `${styles.countdownContainer}` +
+          ` ${darktheme ? styles.darkthemeCountdownContainer : ""}`
         }
       >
         <div>
@@ -63,7 +39,7 @@ export function CountDown({ darktheme }) {
       {hasFinished ? (
         <button
           className={`${styles.countdownButton}
-         ${darktheme ? styles.darkthemecountdownButtonActive : ""}`}
+         ${darktheme ? styles.darkthemeCountdownButtonActive : ""}`}
           disabled
         >
           ciclo encerrado
@@ -75,7 +51,7 @@ export function CountDown({ darktheme }) {
               type="button"
               className={`${styles.countdownButton} ${
                 styles.countdownButtonActive
-              } ${darktheme && styles.darkthemecountdownButtonActive}`}
+              } ${darktheme && styles.darkthemeCountdownButtonActive}`}
               onClick={resetCountDown}
             >
               Abandonar ciclo
@@ -84,7 +60,7 @@ export function CountDown({ darktheme }) {
             <button
               type="button"
               className={`${styles.countdownButton} ${
-                darktheme && styles.darkthemecountdownButtonActive
+                darktheme && styles.darkthemeCountdownButtonActive
               }`}
               onClick={startCountDown}
             >

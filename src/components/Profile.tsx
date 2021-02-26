@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { ChallengesContext } from "../contexts/ChallengesContext";
 import styles from "../styles/components/Profile.module.css";
 
 export function Profile({ darktheme }) {
+  const { challengesCompleted } = useContext(ChallengesContext);
+
   return (
     <div
       className={
@@ -14,7 +18,7 @@ export function Profile({ darktheme }) {
 
         <p>
           <img src="icons/level.svg" alt="Level" />
-          Level 1
+          Level {challengesCompleted}
         </p>
       </div>
     </div>
