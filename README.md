@@ -2,10 +2,10 @@
     <a href="https://pt-br.reactjs.org/">:muscle: Moveit</a>
 </h1>
 <p align="center">
-    ![Badge](https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit)
-    ![Badge](https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit)
-    ![Badge](https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit)
-    ![Badge](https://img.shields.io/github/license/Gabriel-Alexander10/Moveit)
+    <img src="https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit" alt"issues" />
+    <img src="https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit" alt"forks" />
+    <img src="https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit" alt"stars" />
+    <img src="https://img.shields.io/github/license/Gabriel-Alexander10/Moveit" alt"license" />
 </p>
 
 <p align="center">
@@ -56,7 +56,9 @@ The following techs were used in this project:
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQG3jlBthcVVqg/profile-displayphoto-shrink_200_200/0/1603548566092?e=1620259200&v=beta&t=15W8RT5E1u6lnNpJgP6D-7gdse4Busx49A-BtnFtVOw" width="100px;" alt="Gabriel Alexander"/>
  <br />
  <sub><b>Gabriel Alexander</b></sub></a>  
- [![Linkedin Badge](https://img.shields.io/badge/Gabriel%20Alexander-blue?style=flat&logo=linkedin&link=https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/)](https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/) 
+<a href="https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/">
+   <img src="https://img.shields.io/badge/Gabriel%20Alexander-blue?style=flat&logo=linkedin&link=https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/" alt="LinkedIn badge" /> 
+</a>
 
 ## License
 
