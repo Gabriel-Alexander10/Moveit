@@ -1,6 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    <a href="https://pt-br.reactjs.org/">
+        <img src="./public/favicon.png" alt="Moveit" width="30px" /> Moveit</a>
+</h1>
+<p align="center">
+    <img src="https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit" alt"issues" />
+    <img src="https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit" alt"forks" />
+    <img src="https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit" alt"stars" />
+    <img src="https://img.shields.io/github/license/Gabriel-Alexander10/Moveit" alt"license" />
+</p>
 
-## Getting Started
+<p align="center">
+ <a href="#about">About</a> • 
+ <a href="#features">Features</a> • 
+ <a href="#layout">Layout</a> • 
+ <a href="#techs">Techs</a> • 
+ <a href="#author">Author</a> • 
+ <a href="#license">License</a>
+</p>
+
+## About
+  🚀 Moveit is an application developed in NextJs, which aims to increase the developer’s focus and improve their health using the pomodoro method with physical exercises during breaks. Project developed during ** NLW - Next Level Week ** offered by Rocketseat.  
+
+## Features
+
+- [x] User can complete challenges after finishing a cycle
+- [x] User can level up by completing challenges
+
+## Layout
+The application layout is available on Figma:  
+<a href="https://www.figma.com/file/M3aTl6xSj2Q4u3nH1zNPZL/Move.it-2.0-(Copy)">
+    Layout
+</a>
+<br/>
+<img src="./githubImages/layout.gif" alt="layout" />
+
+## How it works
 
 First, run the development server:
 
@@ -12,23 +46,25 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+##  Techs
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The following techs were used in this project:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [React](https://reactjs.org/)
+- [NextJS](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-## Learn More
+## Author
+<a href="https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/" >
+ <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQG3jlBthcVVqg/profile-displayphoto-shrink_200_200/0/1603548566092?e=1620259200&v=beta&t=15W8RT5E1u6lnNpJgP6D-7gdse4Busx49A-BtnFtVOw" width="100px;" alt="Gabriel Alexander"/>
+ <br />
+ <sub><b>Gabriel Alexander</b></sub></a>    
+<br />
+<a href="https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/">
+   <img src="https://img.shields.io/badge/Gabriel%20Alexander-blue?style=flat&logo=linkedin&link=https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/" alt="LinkedIn badge" /> 
+</a>
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is under the license [MIT](./LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
