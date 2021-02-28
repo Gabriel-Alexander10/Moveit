@@ -1,13 +1,18 @@
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">:muscle: Moveit</a>
 </h1>
+<p align="center">
+    ![Badge](https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit)
+    ![Badge](https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit)
+    ![Badge](https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit)
+    ![Badge](https://img.shields.io/github/license/Gabriel-Alexander10/Moveit)
+</p>
 
 <p align="center">
  <a href="#about">About</a> • 
- <a href="#features">About</a> • 
+ <a href="#features">Features</a> • 
  <a href="#layout">Layout</a> • 
  <a href="#techs">Techs</a> • 
- <a href="#contributions">Contributions</a> • 
  <a href="#license">License</a> • 
  <a href="#author">Author</a>
 </p>
@@ -50,8 +55,8 @@ The following techs were used in this project:
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQG3jlBthcVVqg/profile-displayphoto-shrink_200_200/0/1603548566092?e=1620259200&v=beta&t=15W8RT5E1u6lnNpJgP6D-7gdse4Busx49A-BtnFtVOw" width="100px;" alt="Gabriel Alexander"/>
  <br />
- <sub><b>Gabriel Alexander</b></sub></a>
- [![Linkedin Badge](https://img.shields.io/badge/-Gabriel-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/)](https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/) 
+ <sub><b>Gabriel Alexander</b></sub></a>  
+ [![Linkedin Badge](https://img.shields.io/badge/Gabriel%20Alexander-blue?style=flat&logo=linkedin&link=https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/)](https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/) 
 
 ## License
 
