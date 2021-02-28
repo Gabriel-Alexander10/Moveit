@@ -3,10 +3,10 @@
         <img src="./public/favicon.png" alt="Moveit" width="30px" /> Moveit</a>
 </h1>
 <p align="center">
-    <img src="https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit" alt"issues" />
-    <img src="https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit" alt"forks" />
-    <img src="https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit" alt"stars" />
-    <img src="https://img.shields.io/github/license/Gabriel-Alexander10/Moveit" alt"license" />
+    <img src="https://img.shields.io/github/issues/Gabriel-Alexander10/Moveit" alt="issues" />
+    <img src="https://img.shields.io/github/forks/Gabriel-Alexander10/Moveit" alt="forks" />
+    <img src="https://img.shields.io/github/stars/Gabriel-Alexander10/Moveit" alt="stars" />
+    <img src="https://img.shields.io/github/license/Gabriel-Alexander10/Moveit" alt="license" />
 </p>
 
 <p align="center">
@@ -19,7 +19,8 @@
 </p>
 
 ## About
-  🚀 Moveit is an application developed in NextJs, which aims to increase the developer’s focus and improve their health using the pomodoro method with physical exercises during breaks. Project developed during ** NLW - Next Level Week ** offered by Rocketseat.  
+
+🚀 Moveit is an application developed in NextJs, which aims to increase the developer’s focus and improve their health using the pomodoro method with physical exercises during breaks. Project developed during ** NLW - Next Level Week ** offered by Rocketseat.
 
 ## Features
 
@@ -27,9 +28,10 @@
 - [x] User can level up by completing challenges
 
 ## Layout
+
 The application layout is available on Figma:  
 <a href="https://www.figma.com/file/M3aTl6xSj2Q4u3nH1zNPZL/Move.it-2.0-(Copy)">
-    Layout
+Layout
 </a>
 <br/>
 <img src="./githubImages/layout.gif" alt="layout" />
@@ -46,7 +48,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-##  Techs
+## Techs
 
 The following techs were used in this project:
 
@@ -55,6 +57,7 @@ The following techs were used in this project:
 - [TypeScript](https://www.typescriptlang.org/)
 
 ## Author
+
 <a href="https://www.linkedin.com/in/gabriel-alexander-abb90a1b6/" >
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C5603AQG3jlBthcVVqg/profile-displayphoto-shrink_200_200/0/1603548566092?e=1620259200&v=beta&t=15W8RT5E1u6lnNpJgP6D-7gdse4Busx49A-BtnFtVOw" width="100px;" alt="Gabriel Alexander"/>
  <br />
@@ -67,4 +70,3 @@ The following techs were used in this project:
 ## License
 
 This project is under the license [MIT](./LICENSE).
-
