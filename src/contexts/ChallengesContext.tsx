@@ -65,7 +65,7 @@ export function ChallengesProvider({
 
   const closeLevelUpModal = useCallback(() => {
     setIsLevelUpModalOpen(false);
-  }, [setIsLevelUpModalOpen]);
+  }, []);
 
   const startNewChallenge = useCallback(() => {
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
@@ -80,11 +80,11 @@ export function ChallengesProvider({
         body: `Valendo ${challenge.amount} xp`,
       });
     }
-  }, [challenges, setActiveChallenge]);
+  }, [challenges]);
 
   const resetChallenge = useCallback(() => {
     setActiveChallenge(null);
-  }, [setActiveChallenge]);
+  }, []);
 
   const completeChallenge = useCallback(() => {
     if (!activeChallenge) {
@@ -103,14 +103,7 @@ export function ChallengesProvider({
     setCurrentExperience(finalExperience);
     setActiveChallenge(null);
     setChallengesCompleted(challengesCompleted + 1);
-  }, [
-    activeChallenge,
-    setCurrentExperience,
-    setActiveChallenge,
-    setChallengesCompleted,
-    experienceToNextLevel,
-    levelUp,
-  ]);
+  }, [activeChallenge, experienceToNextLevel, levelUp]);
 
   return (
     <ChallengesContext.Provider
