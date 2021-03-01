@@ -1,6 +1,6 @@
 import React, { createContext, useState, useCallback, useEffect } from "react";
 import Cookies from "js-cookie";
-import challenges from "../assets/challenges";
+import challenges from "../assets/challenges.json";
 import { LevelUpModal } from "../components/LevelUpModal";
 
 interface Challenge {
@@ -76,9 +76,17 @@ export function ChallengesProvider({
     new Audio("/notification.mp3").play();
 
     if (Notification.permission === "granted") {
-      new Notification("Novo desafio!!!", {
-        body: `Valendo ${challenge.amount} xp`,
-      });
+      try {
+        new Notification("Novo desafio!!!", {
+          body: `Valendo ${challenge.amount} xp`,
+        });
+      } catch (err) {
+        try {
+          new ServiceWorkerRegistration().showNotification("Novo desafio!!!", {
+            body: `Valendo ${challenge.amount} xp`,
+          });
+        } catch (err) {}
+      }
     }
   }, [challenges]);
 
