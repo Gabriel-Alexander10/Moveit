@@ -14,8 +14,16 @@
   grid-template-columns: 1fr 1fr;
   gap: 6.25rem;
   align-content: center;
+  padding: 2rem;
 }
 
 .container > div {
   display: flex;
+}
+
+@media (max-width: 730px) {
+  .container section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
