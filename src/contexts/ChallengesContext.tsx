@@ -67,7 +67,7 @@ export function ChallengesProvider({
     setIsLevelUpModalOpen(false);
   }, []);
 
-  const startNewChallenge = useCallback(() => {
+  const startNewChallenge = useCallback(async () => {
     const randomChallengeIndex = Math.floor(Math.random() * challenges.length);
     const challenge = challenges[randomChallengeIndex];
 
@@ -82,8 +82,10 @@ export function ChallengesProvider({
         });
       } catch (err) {
         try {
-          new ServiceWorkerRegistration().showNotification("Novo desafio!!!", {
-            body: `Valendo ${challenge.amount} xp`,
+          navigator.serviceWorker.ready.then((registration) => {
+            registration.showNotification("Novo desafio!!!", {
+              body: `Valendo ${challenge.amount} xp`,
+            });
           });
         } catch (err) {}
       }
